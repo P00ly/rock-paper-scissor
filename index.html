@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock_Paper_Scissors</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@500&display=swap" 
+            rel="stylesheet">
+
+</head>
+
+<body>
+    <main id="main-content">
+<!-- title section -->
+    <div class="title-section"></div>
+        <h1 class="title">Rock Paper Scissors</h1>
+        <h2 class="description">I challenge you to a game. The first to 5 wins.</h2>
+    </div>
+
+<!-- Button Section -->
+    <div class="button-section">
+        <div id="rock" class="button">
+            <img src="rock.jpeg" alt="rock"/>
+        </div>
+        <div id="paper" class="button">
+            <img src="paper.png" alt="paper">
+        </div>
+        <div id="scissors" class="button">
+            <img src="scissor.jpeg" alt="scissors">
+        </div>
+    </div>
+
+<!--Round winner display-->
+
+
+<!--Scores-->
+    <div class="score-container">
+        <p class="label">YOU:</p>
+        <div class="score">0</div>
+        <p class="label">COMPUTER:</p>
+        <div class="score">0</div>
+    </div>
+
+
+
+</main>
+
+<!-- Game winner alert + rematch button -->
+<div id="end-alert" class="disappear">
+    <div id="end-desc"></div>
+    <a id="rematch-button"></a>
+</div>
+
+
+
+
+</body>
+<script src="script.js"></script>
+</html>
