@@ -9,7 +9,7 @@ const result_p = document.querySelector(".result > p");
 const rock_div = document.getElementById("rock"); 
 const paper_div = document.getElementById("paper"); 
 const scissors_div = document.getElementById("scissors");
-const buttons = document.querySelectorAll('button');
+const buttons = document.querySelectorAll(".button-section");
 
 //function for computers random move
 function computerPlay() {
@@ -52,7 +52,7 @@ function draw(playerSelection, computerSelection) {
 
 //Win, lose and tie game function and end game button disabler
 function disabled() {
-    buttons.classList.add(disable);
+    buttons.classList.add('disable');
 }
 
 function game(playerSelection) {
@@ -76,11 +76,10 @@ function game(playerSelection) {
     }
     if (playerScore == 5) {
         result_p.innerHTML = "Congrats, You won the game! Refresh to play again."
-        disabled();
     }
     if (computerScore == 5) {
         result_p.innerHTML = "You lost to a computer? Refresh for a rematch"
-        disabled();
+        
     }
 };
 
